@@ -5,7 +5,7 @@ import numpy as np
 import PIL
 import matplotlib.pyplot as plt
 import requests
-import cv2
+# import cv2
 
 def tensor_to_image(tensor):
     tensor = tensor*255
@@ -36,8 +36,8 @@ def load_img(url):
 
 
 
-style_image = cv2.imread('2.jpeg')
-content_image = cv2.imread('2.jpeg')
+style_image = np.zeros((512,3))
+content_image = style_image
 
 
 st.set_page_config(layout="wide")
